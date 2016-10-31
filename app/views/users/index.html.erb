@@ -1,3 +1,15 @@
+<script>
+    $(document).ready(function(){
+        function load_users(){
+            setTimeout(function(){
+                users_poll('#users_tbody', "<%= users_path(format: :json) %>");
+                load_users();
+            }, 3000);
+        }
+        load_users();
+    });
+</script>
+
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Users</h1>
