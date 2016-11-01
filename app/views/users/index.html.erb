@@ -27,7 +27,7 @@
 
   <tbody id="users_tbody">
     <% @users.each do |user| %>
-        <%= render partial: 'user', locals: { user_partial: user } %>
+        <%= sync partial: 'user', resource: user %>
     <% end %>
   </tbody>
 </table>
