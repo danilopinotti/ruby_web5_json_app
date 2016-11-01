@@ -28,6 +28,8 @@ gem 'thin', '~> 1.6'
 gem 'faye', '~> 1.1'
 
 gem 'render_sync', '~> 0.5.0'
+
+gem 'puma'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
