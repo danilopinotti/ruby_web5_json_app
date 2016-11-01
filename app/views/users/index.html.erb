@@ -27,15 +27,7 @@
 
   <tbody id="users_tbody">
     <% @users.each do |user| %>
-      <tr>
-        <td><%= user.name %></td>
-        <td><%= user.birthday %></td>
-        <td><%= user.weight %></td>
-        <td><%= user.bio %></td>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <%= render partial: 'user', locals: { user_partial: user } %>
     <% end %>
   </tbody>
 </table>

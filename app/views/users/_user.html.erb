@@ -1,0 +1,9 @@
+<tr>
+  <td><%= user_partial.name %></td>
+  <td><%= user_partial.birthday %></td>
+  <td><%= user_partial.weight %></td>
+  <td><%= user_partial.bio %></td>
+  <td><%= link_to 'Show', user_partial %></td>
+  <td><%= link_to 'Edit', edit_user_path(user_partial) %></td>
+  <td><%= link_to 'Destroy', user_partial, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+</tr>
